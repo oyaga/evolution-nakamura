@@ -17,7 +17,7 @@ services:
 
     environment:
     ## ⚙️ Configurações Gerais
-      - SERVER_URL=https://evolution.aikanakamura.com
+      - SERVER_URL=https://evolution-teste.aikanakamura.com
       - AUTHENTICATION_API_KEY=988aeb4c9250361977ddacd0fdb1ba1e
       - AUTHENTICATION_EXPOSE_IN_FETCH_INSTANCES=true
       - DEL_INSTANCE=false
@@ -191,13 +191,13 @@ services:
         - node.role == manager
       labels:
         - traefik.enable=1
-        - traefik.http.routers.evolution.rule=Host(`evolution.aikanakamura.com`) ## Url da Evolution API
-        - traefik.http.routers.evolution.entrypoints=websecure
-        - traefik.http.routers.evolution.priority=1
-        - traefik.http.routers.evolution.tls.certresolver=letsencryptresolver
-        - traefik.http.routers.evolution.service=evolution
-        - traefik.http.services.evolution.loadbalancer.server.port=8080
-        - traefik.http.services.evolution.loadbalancer.passHostHeader=true
+        - traefik.http.routers.evolution-teste.rule=Host(`evolution-teste.aikanakamura.com`) ## Url da Evolution API
+        - traefik.http.routers.evolution-teste.entrypoints=websecure
+        - traefik.http.routers.evolution-teste.priority=1
+        - traefik.http.routers.evolution-teste.tls.certresolver=letsencryptresolver
+        - traefik.http.routers.evolution-teste.service=evolution-teste
+        - traefik.http.services.evolution-teste.loadbalancer.server.port=8080
+        - traefik.http.services.evolution-teste.loadbalancer.passHostHeader=true
 
 ## --------------------------- ORION --------------------------- ##
 
