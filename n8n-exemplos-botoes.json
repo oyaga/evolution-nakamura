@@ -1,0 +1,193 @@
+{
+  "name": "Evolution API - Exemplos de Botões",
+  "nodes": [
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://evolution-teste.aikanakamura.com/message/sendButtons/Aika",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "name": "apikey",
+              "value": "988aeb4c9250361977ddacd0fdb1ba1e"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "{\n  \"number\": \"5519993369603\",\n  \"title\": \"✅ Botões de Resposta\",\n  \"description\": \"Clique em uma opção para responder\",\n  \"footer\": \"Tipo: Reply Buttons\",\n  \"buttons\": [\n    {\n      \"type\": \"reply\",\n      \"displayText\": \"Sim\",\n      \"id\": \"resposta_sim\"\n    },\n    {\n      \"type\": \"reply\",\n      \"displayText\": \"Não\",\n      \"id\": \"resposta_nao\"\n    },\n    {\n      \"type\": \"reply\",\n      \"displayText\": \"Talvez\",\n      \"id\": \"resposta_talvez\"\n    }\n  ]\n}",
+        "options": {}
+      },
+      "id": "1-reply-buttons",
+      "name": "1️⃣ Botões de Resposta (Reply)",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        400,
+        200
+      ]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://evolution-teste.aikanakamura.com/message/sendButtons/Aika",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "name": "apikey",
+              "value": "988aeb4c9250361977ddacd0fdb1ba1e"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "{\n  \"number\": \"5519993369603\",\n  \"title\": \"🔗 Botão de URL\",\n  \"description\": \"Acesse nosso site\",\n  \"footer\": \"Tipo: URL Button\",\n  \"buttons\": [\n    {\n      \"type\": \"url\",\n      \"displayText\": \"Visitar Site\",\n      \"url\": \"https://aikanakamura.com\"\n    }\n  ]\n}",
+        "options": {}
+      },
+      "id": "2-url-button",
+      "name": "2️⃣ Botão de URL",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        400,
+        400
+      ]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://evolution-teste.aikanakamura.com/message/sendButtons/Aika",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "name": "apikey",
+              "value": "988aeb4c9250361977ddacd0fdb1ba1e"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "{\n  \"number\": \"5519993369603\",\n  \"title\": \"📞 Botão de Chamada\",\n  \"description\": \"Entre em contato\",\n  \"footer\": \"Tipo: Call Button\",\n  \"buttons\": [\n    {\n      \"type\": \"call\",\n      \"displayText\": \"Ligar Agora\",\n      \"phoneNumber\": \"+5519993369603\"\n    }\n  ]\n}",
+        "options": {}
+      },
+      "id": "3-call-button",
+      "name": "3️⃣ Botão de Chamada (Call)",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        400,
+        600
+      ]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://evolution-teste.aikanakamura.com/message/sendButtons/Aika",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "name": "apikey",
+              "value": "988aeb4c9250361977ddacd0fdb1ba1e"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "{\n  \"number\": \"5519993369603\",\n  \"title\": \"📋 Botão de Copiar\",\n  \"description\": \"Copie o código promocional\",\n  \"footer\": \"Tipo: Copy Button\",\n  \"buttons\": [\n    {\n      \"type\": \"copy\",\n      \"displayText\": \"Copiar Código\",\n      \"copyCode\": \"DESCONTO50\"\n    }\n  ]\n}",
+        "options": {}
+      },
+      "id": "4-copy-button",
+      "name": "4️⃣ Botão de Copiar (Copy)",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        400,
+        800
+      ]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://evolution-teste.aikanakamura.com/message/sendButtons/Aika",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "name": "apikey",
+              "value": "988aeb4c9250361977ddacd0fdb1ba1e"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "{\n  \"number\": \"5519993369603\",\n  \"thumbnailUrl\": \"https://evolution-api.com/files/evolution-api-logo.png\",\n  \"title\": \"🖼️ Botões com Imagem\",\n  \"description\": \"Mensagem com thumbnail e botões\",\n  \"footer\": \"Evolution API + Imagem\",\n  \"buttons\": [\n    {\n      \"type\": \"reply\",\n      \"displayText\": \"Gostei! 👍\",\n      \"id\": \"gostei\"\n    },\n    {\n      \"type\": \"reply\",\n      \"displayText\": \"Não gostei 👎\",\n      \"id\": \"nao_gostei\"\n    }\n  ]\n}",
+        "options": {}
+      },
+      "id": "5-image-buttons",
+      "name": "5️⃣ Botões com Imagem",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        400,
+        1000
+      ]
+    },
+    {
+      "parameters": {
+        "content": "## 📚 Exemplos de Botões - Evolution API\n\n### Tipos Disponíveis:\n\n1️⃣ **Reply** - Botões de resposta rápida (até 3)\n2️⃣ **URL** - Abrir links externos\n3️⃣ **Call** - Iniciar chamada telefônica\n4️⃣ **Copy** - Copiar texto/código\n5️⃣ **Com Imagem** - Botões + thumbnail\n\n### ⚙️ Configuração:\n- **URL Base**: evolution-teste.aikanakamura.com\n- **Instância**: Aika\n- **API Key**: 988aeb...ba1e\n- **Número**: 5519993369603\n\n### ✅ Correções Aplicadas:\n- contextInfo em mensagens interativas\n- Tipagem correta de contatos\n\n**Execute cada node separadamente para testar!**",
+        "height": 589.6629213483145,
+        "width": 366.8988764044944,
+        "color": 5
+      },
+      "id": "sticky-note-info",
+      "name": "📖 Guia de Botões",
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        -40,
+        180
+      ]
+    }
+  ],
+  "connections": {},
+  "pinData": {},
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "staticData": null,
+  "tags": [
+    {
+      "createdAt": "2024-12-04T00:00:00.000Z",
+      "updatedAt": "2024-12-04T00:00:00.000Z",
+      "id": "1",
+      "name": "Evolution API"
+    }
+  ],
+  "triggerCount": 0,
+  "updatedAt": "2024-12-04T00:00:00.000Z",
+  "versionId": "1"
+}

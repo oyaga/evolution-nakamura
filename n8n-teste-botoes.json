@@ -1,0 +1,67 @@
+{
+  "name": "Teste Evolution API - Enviar Botões",
+  "nodes": [
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://evolution-teste.aikanakamura.com/message/sendButtons/Aika",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "name": "apikey",
+              "value": "988aeb4c9250361977ddacd0fdb1ba1e"
+            }
+          ]
+        },
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": []
+        },
+        "specifyBody": "json",
+        "jsonBody": "{\n  \"number\": \"5519993369603\",\n  \"title\": \"🎯 Teste de Botões\",\n  \"description\": \"Escolha uma das opções abaixo para testar os botões corrigidos\",\n  \"footer\": \"Evolution API - Correções Aplicadas\",\n  \"buttons\": [\n    {\n      \"type\": \"reply\",\n      \"displayText\": \"✅ Opção 1\",\n      \"id\": \"opcao_1\"\n    },\n    {\n      \"type\": \"reply\",\n      \"displayText\": \"🚀 Opção 2\",\n      \"id\": \"opcao_2\"\n    },\n    {\n      \"type\": \"reply\",\n      \"displayText\": \"🎉 Opção 3\",\n      \"id\": \"opcao_3\"\n    }\n  ]\n}",
+        "options": {}
+      },
+      "id": "http-request-botoes",
+      "name": "Enviar Botões WhatsApp",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        400,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "content": "## 🎯 Teste de Botões - Evolution API\n\n### Configuração:\n- **URL**: https://evolution-teste.aikanakamura.com\n- **Instância**: Aika\n- **Número**: 5519993369603\n\n### Botões Testados:\n1. ✅ Opção 1\n2. 🚀 Opção 2  \n3. 🎉 Opção 3\n\n### Correções Aplicadas:\n- ✅ contextInfo para mensagens interativas\n- ✅ Tipagem correta de mensagens\n\n**Clique em \"Test workflow\" para enviar!**",
+        "height": 464.79046539147856,
+        "width": 389.3687490096339,
+        "color": 4
+      },
+      "id": "sticky-note",
+      "name": "Sticky Note",
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        -20,
+        220
+      ]
+    }
+  ],
+  "connections": {},
+  "pinData": {},
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "staticData": null,
+  "tags": [],
+  "triggerCount": 0,
+  "updatedAt": "2024-12-04T00:00:00.000Z",
+  "versionId": "1"
+}
